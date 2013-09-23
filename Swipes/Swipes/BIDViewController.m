@@ -30,6 +30,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UISwipeGestureRecognizer *vertical = [[UISwipeGestureRecognizer alloc]
+                                          initWithTarget:self action:@selector(reportVerticalSwipe:)];
+    vertical.direction = UISwipeGestureRecognizerDirectionUp|
+    UISwipeGestureRecognizerDirectionDown;
+    [self.view addGestureRecognizer:vertical];
+    UISwipeGestureRecognizer *horizontal = [[UISwipeGestureRecognizer alloc]
+                                            initWithTarget:self action:@selector(reportHorizontalSwipe:)];
+    horizontal.direction = UISwipeGestureRecognizerDirectionLeft|
+    UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:horizontal];
 }
 
 - (void)viewDidUnload
@@ -66,25 +76,13 @@
 }
 
 #pragma mark -
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [touches anyObject];
-    gestureStartPoint = [touch locationInView:self.view];
+- (void)reportHorizontalSwipe:(UIGestureRecognizer *)recognizer {
+    label.text = @"Horizontal swipe detected";
+    [self performSelector:@selector(eraseText) withObject:nil afterDelay:2];
 }
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [touches anyObject];
-    CGPoint currentPosition = [touch locationInView:self.view];
-    CGFloat deltaX = fabsf(gestureStartPoint.x - currentPosition.x);
-    CGFloat deltaY = fabsf(gestureStartPoint.y - currentPosition.y);
-    if (deltaX >= kMinimumGestureLength && deltaY <= kMaximumVariance) {
-        label.text = @"Horizontal swipe detected";
-        [self performSelector:@selector(eraseText)
-                   withObject:nil afterDelay:2];
-    } else if (deltaY >= kMinimumGestureLength &&
-               deltaX <= kMaximumVariance){
-        label.text = @"Vertical swipe detected";
-        [self performSelector:@selector(eraseText) withObject:nil
-                   afterDelay:2];
-    }
+- (void)reportVerticalSwipe:(UIGestureRecognizer *)recognizer {
+    label.text = @"Vertical swipe detected";
+    [self performSelector:@selector(eraseText) withObject:nil afterDelay:2];
 }
 
 @end
