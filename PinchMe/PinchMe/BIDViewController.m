@@ -9,6 +9,8 @@
 #import "BIDViewController.h"
 
 @implementation BIDViewController
+@synthesize label;
+@synthesize initialFontSize;
 
 - (void)didReceiveMemoryWarning
 {
@@ -22,6 +24,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc]
+                                       initWithTarget:self action:@selector(doPinch:)];
+    [self.view addGestureRecognizer:pinch];
 }
 
 - (void)viewDidUnload
@@ -29,6 +34,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.label = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -55,6 +61,13 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+- (void)doPinch:(UIPinchGestureRecognizer *)pinch {
+    if (pinch.state == UIGestureRecognizerStateBegan) {
+        initialFontSize = label.font.pointSize;
+    } else {
+        label.font = [label.font fontWithSize:initialFontSize * pinch.scale];
+    }
 }
 
 @end
