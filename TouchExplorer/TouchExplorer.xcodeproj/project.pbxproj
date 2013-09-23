@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002A900217F01B9700F022DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A900117F01B9700F022DA /* UIKit.framework */; };
+		002A900417F01B9700F022DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A900317F01B9700F022DA /* Foundation.framework */; };
+		002A900617F01B9700F022DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A900517F01B9700F022DA /* CoreGraphics.framework */; };
+		002A900C17F01B9700F022DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 002A900A17F01B9700F022DA /* InfoPlist.strings */; };
+		002A900E17F01B9700F022DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A900D17F01B9700F022DA /* main.m */; };
+		002A901217F01B9700F022DA /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A901117F01B9700F022DA /* BIDAppDelegate.m */; };
+		002A901517F01B9700F022DA /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A901417F01B9700F022DA /* BIDViewController.m */; };
+		002A901817F01B9700F022DA /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002A901617F01B9700F022DA /* BIDViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002A8FFD17F01B9700F022DA /* TouchExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002A900117F01B9700F022DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		002A900317F01B9700F022DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		002A900517F01B9700F022DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		002A900917F01B9700F022DA /* TouchExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchExplorer-Info.plist"; sourceTree = "<group>"; };
+		002A900B17F01B9700F022DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		002A900D17F01B9700F022DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		002A900F17F01B9700F022DA /* TouchExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchExplorer-Prefix.pch"; sourceTree = "<group>"; };
+		002A901017F01B9700F022DA /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		002A901117F01B9700F022DA /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		002A901317F01B9700F022DA /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		002A901417F01B9700F022DA /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		002A901717F01B9700F022DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002A8FFA17F01B9700F022DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002A900217F01B9700F022DA /* UIKit.framework in Frameworks */,
+				002A900417F01B9700F022DA /* Foundation.framework in Frameworks */,
+				002A900617F01B9700F022DA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002A8FF217F01B9700F022DA = {
+			isa = PBXGroup;
+			children = (
+				002A900717F01B9700F022DA /* TouchExplorer */,
+				002A900017F01B9700F022DA /* Frameworks */,
+				002A8FFE17F01B9700F022DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		002A8FFE17F01B9700F022DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002A8FFD17F01B9700F022DA /* TouchExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002A900017F01B9700F022DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002A900117F01B9700F022DA /* UIKit.framework */,
+				002A900317F01B9700F022DA /* Foundation.framework */,
+				002A900517F01B9700F022DA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		002A900717F01B9700F022DA /* TouchExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				002A901017F01B9700F022DA /* BIDAppDelegate.h */,
+				002A901117F01B9700F022DA /* BIDAppDelegate.m */,
+				002A901317F01B9700F022DA /* BIDViewController.h */,
+				002A901417F01B9700F022DA /* BIDViewController.m */,
+				002A901617F01B9700F022DA /* BIDViewController.xib */,
+				002A900817F01B9700F022DA /* Supporting Files */,
+			);
+			path = TouchExplorer;
+			sourceTree = "<group>";
+		};
+		002A900817F01B9700F022DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				002A900917F01B9700F022DA /* TouchExplorer-Info.plist */,
+				002A900A17F01B9700F022DA /* InfoPlist.strings */,
+				002A900D17F01B9700F022DA /* main.m */,
+				002A900F17F01B9700F022DA /* TouchExplorer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002A8FFC17F01B9700F022DA /* TouchExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002A901B17F01B9700F022DA /* Build configuration list for PBXNativeTarget "TouchExplorer" */;
+			buildPhases = (
+				002A8FF917F01B9700F022DA /* Sources */,
+				002A8FFA17F01B9700F022DA /* Frameworks */,
+				002A8FFB17F01B9700F022DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchExplorer;
+			productName = TouchExplorer;
+			productReference = 002A8FFD17F01B9700F022DA /* TouchExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002A8FF417F01B9700F022DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 002A8FF717F01B9700F022DA /* Build configuration list for PBXProject "TouchExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 002A8FF217F01B9700F022DA;
+			productRefGroup = 002A8FFE17F01B9700F022DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002A8FFC17F01B9700F022DA /* TouchExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002A8FFB17F01B9700F022DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002A900C17F01B9700F022DA /* InfoPlist.strings in Resources */,
+				002A901817F01B9700F022DA /* BIDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002A8FF917F01B9700F022DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002A900E17F01B9700F022DA /* main.m in Sources */,
+				002A901217F01B9700F022DA /* BIDAppDelegate.m in Sources */,
+				002A901517F01B9700F022DA /* BIDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		002A900A17F01B9700F022DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002A900B17F01B9700F022DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		002A901617F01B9700F022DA /* BIDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002A901717F01B9700F022DA /* en */,
+			);
+			name = BIDViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		002A901917F01B9700F022DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		002A901A17F01B9700F022DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		002A901C17F01B9700F022DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchExplorer/TouchExplorer-Prefix.pch";
+				INFOPLIST_FILE = "TouchExplorer/TouchExplorer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		002A901D17F01B9700F022DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchExplorer/TouchExplorer-Prefix.pch";
+				INFOPLIST_FILE = "TouchExplorer/TouchExplorer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002A8FF717F01B9700F022DA /* Build configuration list for PBXProject "TouchExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002A901917F01B9700F022DA /* Debug */,
+				002A901A17F01B9700F022DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002A901B17F01B9700F022DA /* Build configuration list for PBXNativeTarget "TouchExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002A901C17F01B9700F022DA /* Debug */,
+				002A901D17F01B9700F022DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002A8FF417F01B9700F022DA /* Project object */;
+}
