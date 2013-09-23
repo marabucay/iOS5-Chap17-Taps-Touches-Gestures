@@ -15,6 +15,8 @@
 		002A90C217F0411300F022DA /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A90C117F0411300F022DA /* BIDAppDelegate.m */; };
 		002A90C517F0411300F022DA /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A90C417F0411300F022DA /* BIDViewController.m */; };
 		002A90C817F0411300F022DA /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002A90C617F0411300F022DA /* BIDViewController.xib */; };
+		002A90CF17F041A700F022DA /* CGPointUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 002A90CE17F041A700F022DA /* CGPointUtils.c */; };
+		002A90D217F042AD00F022DA /* BIDCheckMarkRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A90D117F042AD00F022DA /* BIDCheckMarkRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		002A90C317F0411300F022DA /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		002A90C417F0411300F022DA /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		002A90C717F0411300F022DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		002A90CE17F041A700F022DA /* CGPointUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CGPointUtils.c; path = ../../../../Downloads/CGPointUtils.c; sourceTree = "<group>"; };
+		002A90D017F042AD00F022DA /* BIDCheckMarkRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIDCheckMarkRecognizer.h; path = ../BIDCheckMarkRecognizer.h; sourceTree = "<group>"; };
+		002A90D117F042AD00F022DA /* BIDCheckMarkRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIDCheckMarkRecognizer.m; path = ../BIDCheckMarkRecognizer.m; sourceTree = "<group>"; };
+		002A90D317F0431500F022DA /* CGPointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPointUtils.h; path = ../../../../Downloads/CGPointUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,15 @@
 		002A90B717F0411300F022DA /* CheckPlease */ = {
 			isa = PBXGroup;
 			children = (
+				002A90D017F042AD00F022DA /* BIDCheckMarkRecognizer.h */,
+				002A90D117F042AD00F022DA /* BIDCheckMarkRecognizer.m */,
 				002A90C017F0411300F022DA /* BIDAppDelegate.h */,
 				002A90C117F0411300F022DA /* BIDAppDelegate.m */,
 				002A90C317F0411300F022DA /* BIDViewController.h */,
 				002A90C417F0411300F022DA /* BIDViewController.m */,
 				002A90C617F0411300F022DA /* BIDViewController.xib */,
+				002A90D317F0431500F022DA /* CGPointUtils.h */,
+				002A90CE17F041A700F022DA /* CGPointUtils.c */,
 				002A90B817F0411300F022DA /* Supporting Files */,
 			);
 			path = CheckPlease;
@@ -163,6 +173,8 @@
 				002A90BE17F0411300F022DA /* main.m in Sources */,
 				002A90C217F0411300F022DA /* BIDAppDelegate.m in Sources */,
 				002A90C517F0411300F022DA /* BIDViewController.m in Sources */,
+				002A90CF17F041A700F022DA /* CGPointUtils.c in Sources */,
+				002A90D217F042AD00F022DA /* BIDCheckMarkRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
