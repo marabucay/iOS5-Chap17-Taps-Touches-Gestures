@@ -7,9 +7,18 @@
 //
 
 #import "BIDViewController.h"
+#import "BIDCheckMarkRecognizer.h"
 
 @implementation BIDViewController
-
+@synthesize label;
+- (void)doCheck:(BIDCheckMarkRecognizer *)check {
+    label.text = @"Checkmark";
+    [self performSelector:@selector(eraseLabel)
+               withObject:nil afterDelay:1.6];
+}
+- (void)eraseLabel {
+    label.text = @"";
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -22,6 +31,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    BIDCheckMarkRecognizer *check = [[BIDCheckMarkRecognizer alloc] initWithTarget:self
+                                                                            action:@selector(doCheck:)];
+    [self.view addGestureRecognizer:check];
 }
 
 - (void)viewDidUnload
@@ -29,6 +41,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.label = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
