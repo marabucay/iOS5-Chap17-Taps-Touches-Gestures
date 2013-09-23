@@ -9,7 +9,19 @@
 #import "BIDViewController.h"
 
 @implementation BIDViewController
-
+@synthesize messageLabel;
+@synthesize tapsLabel;
+@synthesize touchesLabel;
+- (void)updateLabelsFromTouches:(NSSet *)touches {
+    NSUInteger numTaps = [[touches anyObject] tapCount];
+    NSString *tapsMessage = [[NSString alloc]
+                             initWithFormat:@"%d taps detected", numTaps];
+    tapsLabel.text = tapsMessage;
+    NSUInteger numTouches = [touches count];
+    NSString *touchMsg = [[NSString alloc] initWithFormat:
+                          @"%d touches detected", numTouches];
+    touchesLabel.text = touchMsg;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -29,6 +41,9 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.messageLabel = nil;
+    self.tapsLabel = nil;
+    self.touchesLabel = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -55,6 +70,23 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+#pragma mark -
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    messageLabel.text = @"Touches Began";
+    [self updateLabelsFromTouches:touches];
+}
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+    messageLabel.text = @"Touches Cancelled";
+    [self updateLabelsFromTouches:touches];
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    messageLabel.text = @"Touches Ended.";
+    [self updateLabelsFromTouches:touches];
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    messageLabel.text = @"Drag Detected";
+    [self updateLabelsFromTouches:touches];
 }
 
 @end
